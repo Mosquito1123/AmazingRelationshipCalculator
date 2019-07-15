@@ -1,0 +1,20 @@
+PODS:
+  - DynamicColor (4.1.0)
+  - Reveal-SDK (14)
+
+DEPENDENCIES:
+  - DynamicColor
+  - Reveal-SDK (~> 14)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DynamicColor
+    - Reveal-SDK
+
+SPEC CHECKSUMS:
+  DynamicColor: e72fcf4174518c514e862bb4bdea794c1865b412
+  Reveal-SDK: 55b5c5545233b680c2f8da734f202acc15d422b7
+
+PODFILE CHECKSUM: ea7af191ebf6656943ffd54d2fbc50d8be75df8a
+
+COCOAPODS: 1.7.4
