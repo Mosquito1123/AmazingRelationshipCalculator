@@ -2,114 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>LSApplicationQueriesSchemes</key>
-    
-    <array>
-        
-        <!-- 微信 URL Scheme 白名单-->
-        
-        <string>wechat</string>
-        
-        <string>weixin</string>
-        
-        <!-- 新浪微博 URL Scheme 白名单-->
-        
-        <string>sinaweibohd</string>
-        
-        <string>sinaweibo</string>
-        
-        <string>sinaweibosso</string>
-        
-        <string>weibosdk</string>
-        
-        <string>weibosdk2.5</string>
-        
-        <!-- QQ、Qzone URL Scheme 白名单-->
-        
-        <string>mqqapi</string>
-        
-        <string>mqq</string>
-        
-        <string>mqqOpensdkSSoLogin</string>
-        
-        <string>mqqconnect</string>
-        
-        <string>mqqopensdkdataline</string>
-        
-        <string>mqqopensdkgrouptribeshare</string>
-        
-        <string>mqqopensdkfriend</string>
-        
-        <string>mqqopensdkapi</string>
-        
-        <string>mqqopensdkapiV2</string>
-        
-        <string>mqqopensdkapiV3</string>
-        
-        <string>mqzoneopensdk</string>
-        
-        <string>wtloginmqq</string>
-        
-        <string>wtloginmqq2</string>
-        
-        <string>mqqwpa</string>
-        
-        <string>mqzone</string>
-        
-        <string>mqzonev2</string>
-        
-        <string>mqzoneshare</string>
-        
-        <string>wtloginqzone</string>
-        
-        <string>mqzonewx</string>
-        
-        <string>mqzoneopensdkapiV2</string>
-        
-        <string>mqzoneopensdkapi19</string>
-        
-        <string>mqzoneopensdkapi</string>
-        
-        <string>mqzoneopensdk</string>
-        
-        <!-- 支付宝  URL Scheme 白名单-->
-        
-        <string>alipay</string>
-        
-        <string>alipayshare</string>
-        
-    </array>
-    
-    <key>NSCameraUsageDescription</key>
-    <string>应用需要您的同意,才能访问相机</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>应用需要您的同意,才能访问位置</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>应用需要您的同意,才能访问麦克风</string>
-    <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>应用需要获得你的相册权限才能提供正常的服务</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>应用需要您的同意,才能访问相册</string>
-    
-    <key>LSRequiresIPhoneOS</key>
-    <true/>
-    <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSAllowsArbitraryLoads</key>
-        <true/>
-    </dict>
-    
-    
-    <key>NSCameraUsageDescription</key>
-    <string>The application needs your permission to access the camera</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>The application needs your permission to access the microphone</string>
-    <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>The application needs to get your album permissions to provide normal service</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>The application needs your permission to access the album</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>We use your location data to find medical facilities around you</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -123,11 +15,146 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.wechat</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wx9de1e7d51d81c27f</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.tencent</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tencent1106577945</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.qq</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string></string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.sina</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string></string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.link-deep.appkey</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kwz020</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.link-deep.groupkey</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kuony1</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>wechat</string>
+		<string>weixin</string>
+		<string>sinaweibohd</string>
+		<string>sinaweibo</string>
+		<string>sinaweibosso</string>
+		<string>weibosdk</string>
+		<string>weibosdk2.5</string>
+		<string>mqqapi</string>
+		<string>mqq</string>
+		<string>mqqOpensdkSSoLogin</string>
+		<string>mqqconnect</string>
+		<string>mqqopensdkdataline</string>
+		<string>mqqopensdkgrouptribeshare</string>
+		<string>mqqopensdkfriend</string>
+		<string>mqqopensdkapi</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqopensdkapiV3</string>
+		<string>mqzoneopensdk</string>
+		<string>wtloginmqq</string>
+		<string>wtloginmqq2</string>
+		<string>mqqwpa</string>
+		<string>mqzone</string>
+		<string>mqzonev2</string>
+		<string>mqzoneshare</string>
+		<string>wtloginqzone</string>
+		<string>mqzonewx</string>
+		<string>mqzoneopensdkapiV2</string>
+		<string>mqzoneopensdkapi19</string>
+		<string>mqzoneopensdkapi</string>
+		<string>mqzoneopensdk</string>
+		<string>alipay</string>
+		<string>alipayshare</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>App需要您的同意,才能访问媒体资料库</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>App需要您的同意,才能访问蓝牙</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>App需要您的同意,才能访问日历</string>
+	<key>NSCameraUsageDescription</key>
+	<string>The application needs your permission to access the camera</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>App需要您的同意,才能始终访问位置</string>
+	<key>NSLocationUsageDescription</key>
+	<string>We need your location to obtain your weather conditions</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We use your location data to find medical facilities around you</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The application needs your permission to access the microphone</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>The application needs to get your album permissions to provide normal service</string>
+	<key>NSPhotoLibraryAdditionsUsageDescription</key>
+	<string>需要添加图片并存储图片，是否允许打开相册？</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>The application needs your permission to access the album</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>App需要您的同意,才能访问提醒事项</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Speak and watch your words be displayed</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FugazOne-Regular.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

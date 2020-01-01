@@ -9,6 +9,7 @@
 import UIKit
 import JavaScriptCore
 import DynamicColor
+import AVFoundation
 
 class BaseNavigationController: UINavigationController {
     override var childForStatusBarStyle: UIViewController? {
@@ -35,6 +36,8 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var enterLabel: UILabel!
+    
+    public var player:AVAudioPlayer?
     
     private var jsContext: JSContext? {
         guard let jsContext = JSContext(),
@@ -84,12 +87,43 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let session = AVAudioSession.sharedInstance()
+
+        do {
+            if #available(iOS 11.0, *) {
+                try session.setCategory(AVAudioSession.Category.playback,
+                                        mode: .default,
+                                        policy: .longForm,
+                                        options: [])
+            } else {
+                // Fallback on earlier versions
+            }
+        } catch let error {
+            fatalError("*** Unable to set up the audio session: \(error.localizedDescription) ***")
+        }
+
+        // Set up the player.
+        let path = Bundle.main.path(forResource: "background", ofType: "mp3")
+        let url = URL(fileURLWithPath: path ?? "")
+        let player: AVAudioPlayer
+        do {
+            
+            player = try AVAudioPlayer(contentsOf: url)
+            try session.setActive(true, options: AVAudioSession.SetActiveOptions.notifyOthersOnDeactivation)
+            player.play()
+            self.player = player
+        } catch let error {
+            print("*** Unable to set up the audio player: \(error.localizedDescription) ***")
+            // Handle the error here.
+            return
+        }
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.tintColor = .orange
-        
+        //google-play
+    
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "stars"), style: .plain, target: self, action: #selector(switchTheme))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "google-play"), style: .plain, target: self, action: #selector(backgroundMusic))
         
         UIView.activate(constraints: [fatherBtn.heightAnchor.constraint(equalTo: fatherBtn.widthAnchor)])
         
@@ -187,7 +221,17 @@ extension HomeViewController {
     @objc private func switchTheme() {
         isNight = !isNight
     }
-    
+    @objc private func backgroundMusic(){
+        if let p = self.player{
+            if p.isPlaying{
+                p.pause()
+            }else{
+                p.play()
+            }
+            
+        }
+        
+    }
     private func updateTheme() {
         UserDefaults.standard.set(isNight, forKey: "isNight")
         UserDefaults.standard.synchronize()

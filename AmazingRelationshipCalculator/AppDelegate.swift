@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Tortoise
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let first = storyboard.instantiateInitialViewController() else {return true}
+        self.window?.rootViewController = SDLoadController.kirayamatoViewController(first, isTestModel: false, isLocalGif: true, gifImageName: "Tortoise_KOXOBiN", gifImageURL: "")
+//        Limbs.sharedInstance().displayNow(false)
+        self.window?.makeKeyAndVisible()
         return true
     }
 

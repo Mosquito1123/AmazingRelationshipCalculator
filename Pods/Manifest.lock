@@ -7,7 +7,7 @@ DEPENDENCIES:
   - Reveal-SDK (~> 14)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - DynamicColor
     - Reveal-SDK
 
@@ -17,4 +17,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ea7af191ebf6656943ffd54d2fbc50d8be75df8a
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.8.4

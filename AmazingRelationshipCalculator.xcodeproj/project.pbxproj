@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BD06B0EEBC616AFDC802D5A /* Tortoise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0D1EAA0B4A44366E464A30 /* Tortoise.framework */; };
 		B0F7A8110A15DAEFB16CA5AE /* Pods_AmazingRelationshipCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05B31006BEDD38EC0A8FDB1 /* Pods_AmazingRelationshipCalculator.framework */; };
+		F2B1A8C4248E798928E4923E /* Tortoise.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0D1EAA0B4A44366E464A30 /* Tortoise.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F32C059723B75366003DE7AB /* Tortoise_KOXOBiN.gif in Resources */ = {isa = PBXBuildFile; fileRef = F32C059623B75366003DE7AB /* Tortoise_KOXOBiN.gif */; };
 		F3CD7DB922DC726C009D0191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7DB822DC726C009D0191 /* AppDelegate.swift */; };
 		F3CD7DBB22DC726C009D0191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7DBA22DC726C009D0191 /* ViewController.swift */; };
 		F3CD7DBE22DC726C009D0191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7DBC22DC726C009D0191 /* Main.storyboard */; };
@@ -15,13 +18,31 @@
 		F3CD7DC322DC726C009D0191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7DC122DC726C009D0191 /* LaunchScreen.storyboard */; };
 		F3CD7DCC22DC83D3009D0191 /* relationship.min.js in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7DCB22DC83D3009D0191 /* relationship.min.js */; };
 		F3CD7DCE22DC8405009D0191 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7DCD22DC8405009D0191 /* HomeViewController.swift */; };
+		F3CF796C23B0681700518D5E /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3CF796B23B0681700518D5E /* background.mp3 */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F3DA50A423A78DDA00867FE8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2B1A8C4248E798928E4923E /* Tortoise.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1B0D1EAA0B4A44366E464A30 /* Tortoise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tortoise.framework; sourceTree = "<group>"; };
 		78B3ABA9C858657268CA9401 /* Pods-AmazingRelationshipCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRelationshipCalculator.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRelationshipCalculator/Pods-AmazingRelationshipCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		87EF110C2AFD1E91221B8831 /* Pods-AmazingRelationshipCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRelationshipCalculator.release.xcconfig"; path = "Target Support Files/Pods-AmazingRelationshipCalculator/Pods-AmazingRelationshipCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		B61D20D23EA06DF3BA0BFA02 /* AmazingRelationshipCalculator.entitlements */ = {isa = PBXFileReference; explicitFileType = text.plist.entitlements; path = AmazingRelationshipCalculator.entitlements; sourceTree = "<group>"; };
 		F05B31006BEDD38EC0A8FDB1 /* Pods_AmazingRelationshipCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRelationshipCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3CD7DB522DC726C009D0191 /* AmazingRelationshipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRelationshipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32C059623B75366003DE7AB /* Tortoise_KOXOBiN.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Tortoise_KOXOBiN.gif; sourceTree = "<group>"; };
+		F3CD7DB522DC726C009D0191 /* Family Relationship Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Family Relationship Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CD7DB822DC726C009D0191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3CD7DBA22DC726C009D0191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3CD7DBD22DC726C009D0191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +51,7 @@
 		F3CD7DC422DC726C009D0191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3CD7DCB22DC83D3009D0191 /* relationship.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = relationship.min.js; sourceTree = "<group>"; };
 		F3CD7DCD22DC8405009D0191 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F3CF796B23B0681700518D5E /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F7A8110A15DAEFB16CA5AE /* Pods_AmazingRelationshipCalculator.framework in Frameworks */,
+				8BD06B0EEBC616AFDC802D5A /* Tortoise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +97,7 @@
 		F3CD7DB622DC726C009D0191 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F3CD7DB522DC726C009D0191 /* AmazingRelationshipCalculator.app */,
+				F3CD7DB522DC726C009D0191 /* Family Relationship Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,14 +105,18 @@
 		F3CD7DB722DC726C009D0191 /* AmazingRelationshipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				F32C059623B75366003DE7AB /* Tortoise_KOXOBiN.gif */,
 				F3CD7DCA22DC83C4009D0191 /* Resources */,
 				F3CD7DB822DC726C009D0191 /* AppDelegate.swift */,
 				F3CD7DCD22DC8405009D0191 /* HomeViewController.swift */,
+				F3CF796B23B0681700518D5E /* background.mp3 */,
 				F3CD7DBA22DC726C009D0191 /* ViewController.swift */,
 				F3CD7DBC22DC726C009D0191 /* Main.storyboard */,
 				F3CD7DBF22DC726C009D0191 /* Assets.xcassets */,
 				F3CD7DC122DC726C009D0191 /* LaunchScreen.storyboard */,
 				F3CD7DC422DC726C009D0191 /* Info.plist */,
+				B61D20D23EA06DF3BA0BFA02 /* AmazingRelationshipCalculator.entitlements */,
+				1B0D1EAA0B4A44366E464A30 /* Tortoise.framework */,
 			);
 			path = AmazingRelationshipCalculator;
 			sourceTree = "<group>";
@@ -114,6 +141,8 @@
 				F3CD7DB222DC726C009D0191 /* Frameworks */,
 				F3CD7DB322DC726C009D0191 /* Resources */,
 				F9449AF3E13194925DC2B055 /* [CP] Embed Pods Frameworks */,
+				F3DA50A423A78DDA00867FE8 /* Embed Frameworks */,
+				F3DA50A823A78E6100867FE8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -121,7 +150,7 @@
 			);
 			name = AmazingRelationshipCalculator;
 			productName = AmazingRelationshipCalculator;
-			productReference = F3CD7DB522DC726C009D0191 /* AmazingRelationshipCalculator.app */;
+			productReference = F3CD7DB522DC726C009D0191 /* Family Relationship Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -165,6 +194,8 @@
 				F3CD7DC322DC726C009D0191 /* LaunchScreen.storyboard in Resources */,
 				F3CD7DC022DC726C009D0191 /* Assets.xcassets in Resources */,
 				F3CD7DCC22DC83D3009D0191 /* relationship.min.js in Resources */,
+				F3CF796C23B0681700518D5E /* background.mp3 in Resources */,
+				F32C059723B75366003DE7AB /* Tortoise_KOXOBiN.gif in Resources */,
 				F3CD7DBE22DC726C009D0191 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +225,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F3DA50A823A78E6100867FE8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+		};
 		F9449AF3E13194925DC2B055 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,9 +250,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AmazingRelationshipCalculator/Pods-AmazingRelationshipCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AmazingRelationshipCalculator/Pods-AmazingRelationshipCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -367,17 +419,25 @@
 			baseConfigurationReference = 78B3ABA9C858657268CA9401 /* Pods-AmazingRelationshipCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AmazingRelationshipCalculator/AmazingRelationshipCalculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YZMPQV5A87;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 9A6PKSCL8X;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AmazingRelationshipCalculator",
+				);
 				INFOPLIST_FILE = AmazingRelationshipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AmazingRelationshipCalculatorByCranberry.AmazingRelationshipCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peartech.familyrelationshipcalculator;
+				PRODUCT_NAME = "Family Relationship Calculator";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -386,17 +446,25 @@
 			baseConfigurationReference = 87EF110C2AFD1E91221B8831 /* Pods-AmazingRelationshipCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AmazingRelationshipCalculator/AmazingRelationshipCalculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YZMPQV5A87;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 9A6PKSCL8X;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AmazingRelationshipCalculator",
+				);
 				INFOPLIST_FILE = AmazingRelationshipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AmazingRelationshipCalculatorByCranberry.AmazingRelationshipCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peartech.familyrelationshipcalculator;
+				PRODUCT_NAME = "Family Relationship Calculator";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
